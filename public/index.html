@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <title>AngularJS Binding</title>
+    <link rel="stylesheet" type="text/css" href="./css/base.css">
+  </head>
+  <body>
+    <div ng-controller="GreetingController">
+  {{ greeting }}
+    </div>
+    <div ng-controller="DoubleController">
+  Two times <input ng-model="num"> equals {{ double(num) }}
+</div>
+<script src="./bower_components/angular/angular.js"></script>
+<script src="./js/controller.js"></script>
+</body>
+</html>
